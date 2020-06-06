@@ -11,6 +11,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home_page():
+	new_name = name + " likes to eat Mangos "
 	return render_template('index.html')
 
 @app.route('/<name>')
